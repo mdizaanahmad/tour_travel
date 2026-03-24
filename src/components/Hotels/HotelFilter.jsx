@@ -34,11 +34,11 @@ const HotelFilter = ({ onFilterChange }) => {
       <h3>Filter Hotels</h3>
       
       <div className="filter-group">
-        <label>Price Range: ${hotelFilters.minPrice} - ${hotelFilters.maxPrice}</label>
+        <label>Price Range: ₹{hotelFilters.minPrice.toLocaleString('en-IN')} - ₹{hotelFilters.maxPrice.toLocaleString('en-IN')}</label>
         <input
           type="range"
           min="0"
-          max="200"
+          max="10000"
           value={hotelFilters.minPrice}
           onChange={(e) => handlePriceChange('minPrice', e.target.value)}
           className="slider"
@@ -46,7 +46,7 @@ const HotelFilter = ({ onFilterChange }) => {
         <input
           type="range"
           min="0"
-          max="200"
+          max="10000"
           value={hotelFilters.maxPrice}
           onChange={(e) => handlePriceChange('maxPrice', e.target.value)}
           className="slider"

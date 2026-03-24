@@ -1,0 +1,136 @@
+/* Hotel Card Styles */
+.hotel-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hotel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.hotel-card:hover .hotel-image img {
+  transform: scale(1.05);
+}
+
+.rating-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(102, 126, 234, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.hotel-info {
+  padding: 20px;
+}
+
+.hotel-info h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.location {
+  color: #666;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  color: #667eea;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.reviews {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 5px 0;
+}
+
+.facilities {
+  margin: 15px 0;
+}
+
+.facilities h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.facility-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.facility-tag {
+  background: #f0f0f0;
+  color: #666;
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.hotel-details {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  font-size: 0.9rem;
+}
+
+.hotel-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.details-btn,
+.book-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.details-btn {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.details-btn:hover {
+  background: #ddd;
+}
+
+.book-btn {
+  background: #667eea;
+  color: white;
+}
+
+.book-btn:hover {
+  background: #5568d3;
+}

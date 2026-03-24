@@ -5,7 +5,7 @@ export const FilterContext = createContext();
 export const FilterProvider = ({ children }) => {
   const [hotelFilters, setHotelFilters] = useState({
     minPrice: 0,
-    maxPrice: 200,
+    maxPrice: 10000,
     location: '',
     facilities: []
   });
@@ -28,7 +28,7 @@ export const FilterProvider = ({ children }) => {
   const resetHotelFilters = () => {
     setHotelFilters({
       minPrice: 0,
-      maxPrice: 200,
+      maxPrice: 10000,
       location: '',
       facilities: []
     });
